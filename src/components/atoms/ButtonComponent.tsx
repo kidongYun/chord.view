@@ -2,8 +2,8 @@ import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Component from '../templates/Component'
 
-export interface ButtonProps {
-    theme:     
+interface ButtonProps {
+    theme?:     
     | 'primary'
     | 'secondary'
     | 'success'
@@ -21,8 +21,8 @@ export interface ButtonProps {
     | 'outline-info'
     | 'outline-dark'
     | 'outline-light'
-    text: string
-    onClick: () => void
+    text?: string
+    onClick?: () => void
 }
 
 const ButtonComponent: React.FC<ButtonProps> = (props) => {
@@ -34,6 +34,9 @@ const ButtonComponent: React.FC<ButtonProps> = (props) => {
     </Component>
 
     return view;
+}
+
+ButtonComponent.defaultProps = {
 }
 
 export default ButtonComponent;
