@@ -1,5 +1,5 @@
 import React from 'react'
-import BlackNoteComponent from '../components/molecules/BlackNoteComponent';
+import PianoComponent from '../components/organisms/PianoComponent';
 import Component from '../components/templates/Component';
 
 interface MainProps {}
@@ -7,13 +7,11 @@ interface MainProps {}
 const MainLayout: React.FC<MainProps> = () => {
     
     let view = 
-    <Component backgroundColor="#eeeeee" backgroundHover="#eeeeee">
-        <Component 
-            backgroundColor="#eeeeee" 
-            backgroundHover="#eeeeee" 
-            borderRadius="10px">
-                <BlackNoteComponent/>
+    <Component direction="column">
+        <Component height="150%" verticalAlign="stretch">
+            <PianoComponent/>
         </Component>
+        <Component></Component>
     </Component>
 
     return view;

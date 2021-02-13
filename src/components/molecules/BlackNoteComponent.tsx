@@ -1,14 +1,13 @@
 import React from 'react'
-import Form from 'react-bootstrap/Form'
 import Component from '../templates/Component'
 
 interface BlackNoteProps {
 
 }
 
-const BlackNoteComponent: React.FC<BlackNoteProps> = (props) => {
+const BlackNoteComponent: React.FC<BlackNoteProps> = () => {
     let view = 
-    <Component backgroundColor="#222222">
+    <Component backgroundColor="#333333" backgroundHover="#000000">
     </Component>;
 
     return view;
