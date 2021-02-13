@@ -1,4 +1,5 @@
 import React from 'react'
+import BlackNoteComponent from '../components/molecules/BlackNoteComponent';
 import Component from '../components/templates/Component';
 
 interface MainProps {}
@@ -11,6 +12,7 @@ const MainLayout: React.FC<MainProps> = () => {
             backgroundColor="#eeeeee" 
             backgroundHover="#eeeeee" 
             borderRadius="10px">
+                <BlackNoteComponent/>
         </Component>
     </Component>
 

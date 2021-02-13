@@ -2,7 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Component from '../templates/Component'
 
-export interface ButtonProps {
+interface ButtonProps {
     theme:     
     | 'primary'
     | 'secondary'
