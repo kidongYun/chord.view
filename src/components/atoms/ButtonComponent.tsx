@@ -3,11 +3,7 @@ import Button from 'react-bootstrap/Button'
 import Component from '../templates/Component'
 
 interface ButtonProps {
-<<<<<<< HEAD
     theme?:     
-=======
-    theme:     
->>>>>>> dcd9afaa53ffdde4480b3f6cd0643cf9f277f564
     | 'primary'
     | 'secondary'
     | 'success'
