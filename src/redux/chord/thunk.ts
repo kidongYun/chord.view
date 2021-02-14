@@ -18,5 +18,4 @@ export function getChordThunk(): ThunkAction<void, RootState, null, ChordAction>
 }
 
 async function getChord() {
-    return await axios.get<>("http://localhost:8080");
 }
