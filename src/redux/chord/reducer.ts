@@ -1,9 +1,10 @@
 import { createReducer } from 'typesafe-actions'
 import { ChordAction } from './type'
 import { CHORD_REQ_ACTION, CHORD_SUCCESS_ACTION, CHORD_ERROR_ACTION } from './action'
-import Response from '../stores/Response'
+import Response from '../stores/response'
+import Note from '../stores/note'
 
-const chord = createReducer<Response<{}>, ChordAction>(new Response(), {
+const chord = createReducer<Response<{ chord: string, notes: Array<Note> }>, ChordAction>(new Response(), {
     [CHORD_REQ_ACTION]: state => ({
         ...state
     }),
