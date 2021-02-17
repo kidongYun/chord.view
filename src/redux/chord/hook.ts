@@ -4,11 +4,12 @@ import Note from '../stores/note'
 import { getChordThunk } from './thunk'
 
 export default function useChord() {
-    const selectPlans = useSelector((state: RootState) => state.chord).body;
+    const selectChord = useSelector((state: RootState) => state.chord).body;
     const dispatch = useDispatch();
     const getChord = () => { dispatch(getChordThunk())};
 
     return {
+        selectChord,
         getChord
     }
 }
