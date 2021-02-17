@@ -1,14 +1,19 @@
 import React from 'react'
-import BlackNoteComponent from '../atoms/BlackNoteComponent'
 import PianoScaleComponent from '../molecules/PianoScaleComponent'
-import WhiteNoteComponent from '../atoms/WhiteNoteComponent'
 import Component from '../templates/Component'
+import useChord from '../../redux/chord/hook'
 
 interface PianoProps {
 
 }
 
 const PianoComponent: React.FC<PianoProps> = () => {
+    const { getChord } = useChord();
+
+    React.useEffect(() => {
+        getChord();
+    }, [])
+    
     let view = 
     <Component>
         <PianoScaleComponent/>
